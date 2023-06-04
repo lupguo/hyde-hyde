@@ -19,15 +19,15 @@
 
 .post__title {
   background-image: -webkit-linear-gradient(left, $gradient-color-1, $gradient-color-2); /* For Chrome and Safari */
-  background-image:    -moz-linear-gradient(left, $gradient-color-1, $gradient-color-2); /* For old Fx (3.6 to 15) */
-  background-image:     -ms-linear-gradient(left, $gradient-color-1, $gradient-color-2); /* For pre-releases of IE 10*/
-  background-image:      -o-linear-gradient(left, $gradient-color-1, $gradient-color-2); /* For old Opera (11.1 to 12.0) */
-  background-image:         linear-gradient(to right, $gradient-color-1, $gradient-color-2); /* Standard syntax; must be last */
-  color:transparent;
+  background-image: -moz-linear-gradient(left, $gradient-color-1, $gradient-color-2); /* For old Fx (3.6 to 15) */
+  background-image: -ms-linear-gradient(left, $gradient-color-1, $gradient-color-2); /* For pre-releases of IE 10*/
+  background-image: -o-linear-gradient(left, $gradient-color-1, $gradient-color-2); /* For old Opera (11.1 to 12.0) */
+  background-image: linear-gradient(to right, $gradient-color-1, $gradient-color-2); /* Standard syntax; must be last */
+  color: transparent;
   -webkit-background-clip: text;
-  background-clip: text; 
- }
- 
+  background-clip: text;
+}
+
 .post__subtitle {
   display: block;
   font-size: $post__subtitle-font-size;
@@ -39,4 +39,19 @@
   li {
     font-size: 0.9rem;
   }
+}
+
+.post ul {
+  margin: 0;
+  padding: 0 0 0 2rem;
+
+  li {
+    list-style: circle;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  font-size: small;
+  border-left: 4px solid #78C0A8;
 }

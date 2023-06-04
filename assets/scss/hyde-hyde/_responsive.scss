@@ -15,11 +15,21 @@
       padding-right: 0;
     }
   }
+  .sidebar-nav {
+    text-align: left;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: $sidebar-data-margin-left;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
   .hidden-tablet {
     display: none;
   }
   .sidebar-about,
-  .copyright {
+  .sidebar-copyright {
     display: none;
   }
   .sidebar {
@@ -68,8 +78,10 @@
   input#menuToggle:checked ~ .menu-content {
     max-height: 100% !important;
   }
-  .social {
-    padding: 1em 0 1em 0;
+  .sitebar-social {
+    text-align: left;
+    margin-left: $sidebar-data-margin-left;
+    padding: 0 0 1em 0;
   }
 }
 
@@ -97,7 +109,7 @@
   .content {
     margin-left: $content-margin-left;
     margin-right: $content-margin-right;
-    max-width: $content-max-width;
+    //max-width: $content-max-width;
   }
   .layout-reverse {
     .sidebar {
@@ -136,8 +148,15 @@
 @media (min-width: 992px) {
   html,
   body {
-    font-size: $large-device-font-size;
+    font-size: $root-font-size;
   }
+  .sidebar, .list__title--small{
+    font-size: $large-font-size;
+  }
+  .list__title--small {
+    line-height: 2rem;
+  }
+
   .layout-reverse .content {
     margin-left: 4rem;
     margin-right: 22rem;

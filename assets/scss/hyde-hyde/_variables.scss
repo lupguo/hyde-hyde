@@ -17,12 +17,13 @@ $green: #90a959;
 $cyan: #75b5aa;
 $blue: #268bd2;
 $brown: #8f5536;
+$yellow_01: #f5ff00db;
 
 //https://www.client9.com/css-system-font-stack-sans-serif-v3
-$root-font-family: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
+$root-font-family: "IBM Plex Sans", -apple-system, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 // poole's variables
-$root-font-size: 17px;
+$root-font-size: 14px;
 $root-font-weight: 400;
 // golden ratio https://grtcalculator.com
 // 18px @ 33 px, 20px @ 33 px ~ 1.667em
@@ -34,10 +35,9 @@ $body-bg: #fff;
 $border-color: #e5e5e5;
 
 $large-breakpoint: 38em;
-$large-font-size: 19px;
+$large-font-size: 16px;
 $font-scale-dot7: .7rem;
 $font-scale-dot8: .8rem;
-//
 
 // hyde-hyde
 $small-device-font-size: $root-font-size;
@@ -52,8 +52,8 @@ $code-fence-font-size: .8rem;
 $code-line-height: 1.4;
 
 // links
-$link-color: $blue;
-$link-hover-color: $body-color;
+$link-color: $yellow;
+$link-hover-color: $border-color;
 
 // section
 $section__title-font-size: 2.15rem;
@@ -79,24 +79,24 @@ $item__date-font-size: 1rem;
 $item__title-big-font-size: 1.785rem;
 
 // heading
-$heading-font-weight: 400;
+$heading-font-weight: 700;
 $h1-font-size: 2.15rem;
 $h1-line-height: 1.25;
 $h2-font-size: 1.85rem;
-$h3-font-size: 1.5rem;
-$h4-font-size:1.3rem;
-$h5-font-size:1rem;
+$h3-font-size: 1.4rem;
+$h4-font-size: 1rem;
+$h5-font-size: 1rem;
 
 
 // sidebar
 $sidebar-color: #300030;
-$sidebar-width: 16rem;
-$site__title-font-size: 2.5rem;
+$sidebar-width: 17rem;
+$site_title_font_size: 1.8rem;
 $copyright-font-size: $font-scale-dot7;
 
 // content
 $content-max-width: 38rem; // @ ~70 CPL
-$content-margin-left: $sidebar-width + 2rem;
+$content-margin-left: $sidebar-width + 1rem;
 $content-margin-right: 2rem;
 
 // navigation

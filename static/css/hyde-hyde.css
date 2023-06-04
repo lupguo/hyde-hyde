@@ -248,7 +248,7 @@ a {
       color: #268bd2; }
   .sidebar .sidebar-about {
     text-align: center; }
-  .sidebar .author-image {
+  .sidebar .author_image {
     display: block;
     margin-top: 4px; }
 
@@ -265,19 +265,19 @@ a {
   .sidebar-nav-item .active {
     font-weight: bold; }
 
-.site__title {
+.site_title {
   font-size: 3rem;
   margin-bottom: 0.5rem; }
-  .site__title a:hover {
+  .site_title a:hover {
     border: none; }
 
-.site__description {
+.site_description {
   font-size: 1.285rem;
   font-weight: 300; }
 
-.social {
+.sitebar-social {
   text-align: center; }
-  .social a {
+  .sitebar-social a {
     padding: 0 4px;
     border-style: none;
     text-decoration: none; }
@@ -627,7 +627,7 @@ a.badge-tag {
     color: #fff; }
   input#menuToggle:checked ~ .menu-content {
     max-height: 100% !important; }
-  .social {
+  .sitebar-social {
     padding: 1em 0 1em 0; } }
 
 @media (min-width: 768px) {
