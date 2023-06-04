@@ -31,32 +31,33 @@ h1 {
   line-height: $h1-line-height;
 }
 
-h2::before {
-  content: "༄";
-  margin-right: 8px;
-}
-
 h2 {
   margin: 1rem 0;
   color: #9e3c3c;
   font-size: $h2-font-size;
   padding-bottom: 0.6rem;
-  border-bottom-color: rgba(12, 154, 154, 0.76);
+  border-bottom-color: #9e3c3cd4;
   border-bottom-style: solid;
   border-bottom-width: 6px;
   text-shadow: 6px 3px 3px rgba(202, 166, 36, 30%);
 }
 
+h3::before {
+  content: "༄";
+  margin-right: 8px;
+}
+
 h3 {
   margin: 0.5rem 0;
   padding: 0.7rem 0.5rem;
-  color: #df4d1ad6;
-  background: #a57c4712;
+  color: #1882ce;
+  background: #fafafa;
   font-size: $h3-font-size;
   text-shadow: 8px 3px 11px rgba(0, 0, 0, 0.3);
 }
 
 h4 {
+  padding-left: 0.5rem;
   color: #1882ce;
   margin: 5px auto;
   font-size: $h4-font-size;
@@ -73,22 +74,23 @@ figure {
 }
 
 %quotebox {
-  padding: .8889rem;
+  padding: .5rem;
   margin-top: 1rem;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
   //border-radius: 6px;
   border-left: 6px solid;
   border-right: 6px solid transparent;
-  border-right-width: 6px;
-  border-right-style: solid;
-  border-right-color: rgba(0, 0, 0, 0) transparent;
+  border-right-color: rgba(0, 0, 0, 0);
   color: #7a7a7a;
 }
 
 blockquote {
+  //margin: 0;
   background-color: #fafafa;
-  border-left-color: #e6e6e6;
+  border-left: 5px solid #0C9A9AC1;
+  font-style: italic;
+  font-size: $root-font-size;
   @extend %quotebox;
 }
 

@@ -41,17 +41,39 @@
   }
 }
 
-.post ul {
-  margin: 0;
-  padding: 0 0 0 2rem;
-
-  li {
-    list-style: circle;
-  }
+.post ul, ol {
+  margin: 0.3rem 1rem;
+  padding: 0.3rem 1rem;
 }
 
-blockquote {
-  font-style: italic;
-  font-size: small;
-  border-left: 4px solid #78C0A8;
+.post ul li {
+  list-style: circle;
 }
+
+//.post ol {
+//  margin: 0;
+//  padding: 0;
+//  //counter-reset: li; // 创建计数器
+//}
+//
+//.post ol li {
+//  list-style: decimal-leading-zero;
+//  //position: relative;
+//  //padding-left: 15px;
+//  //list-style: none;
+//}
+
+.post li::before {
+  content: "\200B";
+}
+
+//
+//
+//.post ol li::before {
+//  content: counter(li) ".";
+//  counter-increment: li; // 递增计数器
+//  position: absolute;
+//  left: 0;
+//  font-size: 5px;
+//  color: rgba(0, 0, 0, .8);
+//}
