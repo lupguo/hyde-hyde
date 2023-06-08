@@ -50,30 +50,23 @@
   list-style: circle;
 }
 
-//.post ol {
-//  margin: 0;
-//  padding: 0;
-//  //counter-reset: li; // 创建计数器
-//}
-//
-//.post ol li {
-//  list-style: decimal-leading-zero;
-//  //position: relative;
-//  //padding-left: 15px;
-//  //list-style: none;
-//}
-
-.post li::before {
-  content: "\200B";
+// 相关文章
+.post__related {
+  background: beige;
+  padding: 5px 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border: 1px dashed #895454ab;
 }
 
-//
-//
-//.post ol li::before {
-//  content: counter(li) ".";
-//  counter-increment: li; // 递增计数器
-//  position: absolute;
-//  left: 0;
-//  font-size: 5px;
-//  color: rgba(0, 0, 0, .8);
-//}
+.related-title:before {
+  content: '\0F17';
+  bottom: 6px;
+  position: relative;
+  margin-right: 5px;
+}
+
+.post__related .related-title {
+  background: none;
+  border-bottom-style: double;
+}

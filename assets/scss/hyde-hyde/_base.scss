@@ -22,13 +22,15 @@ h4 {
   font-weight: $heading-font-weight;
   margin: 0;
   padding: 0;
-  font-family: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 }
 
 h1 {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-size: $h1-font-size;
   line-height: $h1-line-height;
+  font-family: $root-font-family;
+  //padding: 1rem 0;
 }
 
 h2 {
@@ -51,9 +53,13 @@ h3 {
   margin: 0.5rem 0;
   padding: 0.7rem 0.5rem;
   color: #1882ce;
-  background: #fafafa;
+  background: #e4f1ffa3;
   font-size: $h3-font-size;
+  transform: skew(-5deg);
   text-shadow: 8px 3px 11px rgba(0, 0, 0, 0.3);
+  border: 1px solid #F5E7E74C;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(255, 127, 127, 0.5);
 }
 
 h4 {

@@ -19,6 +19,7 @@ $blue: #268bd2;
 $brown: #8f5536;
 $yellow_01: #f5ff00db;
 
+
 //https://www.client9.com/css-system-font-stack-sans-serif-v3
 $root-font-family: "IBM Plex Sans", -apple-system, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
@@ -45,8 +46,8 @@ $large-device-font-size: $large-font-size;
 
 // https://www.client9.com/css-system-font-stack-monospace-v2
 $code-font-family: "SFMono-Regular", "SF-Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Roboto Mono", "Ubuntu Mono", "Courier New", Courier, monospace;
-$code-font-size: .9rem;
-$code-fence-font-size: .8rem;
+$code-font-size: 1rem;
+$code-fence-font-size: 1rem;
 //$code-color: #bf616a;
 //$code-background-color: #f9f2f4;
 $code-line-height: 1.4;
@@ -80,10 +81,11 @@ $item__title-big-font-size: 1.785rem;
 
 // heading
 $heading-font-weight: 700;
-$h1-font-size: 2.15rem;
-$h1-line-height: 1.25;
+$h1-font-size: 2.5rem;
+$h1-line-height: normal;
+$small-h1-line-height: 3.25rem;
 $h2-font-size: 1.85rem;
-$h3-font-size: 1.4rem;
+$h3-font-size: 1rem;
 $h4-font-size: 1rem;
 $h5-font-size: 1rem;
 
@@ -94,10 +96,15 @@ $sidebar-width: 17rem;
 $site_title_font_size: 1.8rem;
 $copyright-font-size: $font-scale-dot7;
 
+// toc
+$large-toc-width: 20rem;
+//$small-toc-width: 0;
+
 // content
 $content-max-width: 38rem; // @ ~70 CPL
 $content-margin-left: $sidebar-width + 1rem;
-$content-margin-right: 2rem;
+$large-content-margin-right: $large-toc-width + 1rem;
+$small-content-margin-right: 1rem;
 
 // navigation
 $navigation-color: #c2255c;
