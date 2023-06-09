@@ -1,7 +1,7 @@
 // mobile ~320..480px
 // 320px ~ 16rem/16px ~ 18.8235/17px ~ 17.7778/18px
 // 480px ~ 30rem/16px ~ 28.2353rem/17px ~ 26.6667rem/18px
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   html,
   body {
     font-size: $small-device-font-size;
@@ -70,6 +70,7 @@
     padding: 10px 0 10px 0px;
   }
 
+  // 菜单栏隐藏
   input#menuToggle {
     display: none;
   }
@@ -169,10 +170,11 @@
   body {
     font-size: $root-font-size;
   }
-  .sidebar, .list__title--small {
+  .sidebar {
     font-size: $large-font-size;
   }
   .list__title--small {
+    font-size: $small-device-font-size ;
     line-height: 2rem;
   }
 
