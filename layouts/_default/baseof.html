@@ -3,10 +3,10 @@
     {{ block "header" . }}{{ end }}
     <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
     {{ partial "sidebar.html" . }}
-        <div class="content container">
-            {{ block "content" . }}{{ end }}
-        </div>
-        {{ block "footer" . }}{{ end }}
-		{{ partial "totop-btn.html" . }}
+	<div class="content container">
+	  {{ block "content" . }}{{ end }}
+	</div>
+	{{ block "footer" . }}{{ end }}
+	{{ partial "totop-btn.html" . }}
     </body>
 </html>
