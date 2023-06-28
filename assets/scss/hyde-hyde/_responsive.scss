@@ -122,22 +122,18 @@
     right: 1rem;
     top: 1rem;
   }
-
   .list__title--small {
     font-size: $small-device-font-size;
   }
-
   .content {
     margin-left: $content-margin-left;
-    margin-right: $large-content-margin-right;
+    margin-right: $small-content-margin-right;
   }
-
   .layout-reverse {
     .sidebar {
       left: auto;
       right: 0;
     }
-
   }
   .col-sm-8 {
     width: 66.66666667%;
@@ -194,6 +190,10 @@
     width: 68rem;
   }
 
+  .content {
+    margin-left: $content-margin-left;
+    margin-right: $large-content-margin-right;
+  }
 
 }
 

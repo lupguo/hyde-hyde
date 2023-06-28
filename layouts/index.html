@@ -20,9 +20,9 @@
         </span>
         <span {{if .Scratch.Get "draftPage" }}class="draft"{{end}}>
         {{ if .Description }}
-        {{ .Description }}
+        	{{ .Description }}
         {{ else }}
-        {{ .Summary }}
+        	{{ .Summary }}
         {{ end }}
         </span>
         {{ if .Truncated }}
