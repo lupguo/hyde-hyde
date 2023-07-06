@@ -3,7 +3,7 @@
 <ul class="pagination">
     {{ with $pag.First }}
     <li class="page-item">
-        <a href="{{ .URL }}" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        <a href="{{ .URL }}" class="page-link" aria-label="First"><span aria-hidden="true">首页</span></a>
     </li>
     {{ end }}
     <li class="page-item{{ if not $pag.HasPrev }} disabled{{ end }}">
@@ -32,7 +32,7 @@
     </li>
     {{ with $pag.Last }}
     <li class="page-item">
-        <a href="{{ .URL }}" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="{{ .URL }}" class="page-link" aria-label="Last"><span aria-hidden="true">尾页</span></a>
     </li>
     {{ end }}
 </ul>

@@ -1,16 +1,39 @@
-// for the list of posts
+// for the list of posts-list
 .section__title {
-  //font-size: $section__title-font-size;
+  font-size: $section__title-font-size;
+}
+
+.post-wisdom {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 0px;
+  color: $blue;
+  background: #f1f0a66b;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "SF-Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Roboto Mono", "Ubuntu Mono", "Courier New", Courier, monospace;
 }
 
 .post-list__item {
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
 }
 
 .item__title--big {
   display: block;
   font-size: $item__title-big-font-size;
   line-height: 1.25;
+  margin-bottom: 0.2em;
+}
+
+.post-item__date {
+  display: none;
+}
+
+.post-item__description {
+  font-size: 16px;
+  line-height: 1.8rem;
+  margin-top: 2px;
+  display: inline-block;
 }
 
 .item__title--small {

@@ -3,7 +3,8 @@
 {{ end }}
 
 {{ define "content" }}
-  <div class="post-list">
+  <div class="post-wisdom"> 拥抱变化/吾日三省吾身/日拱一卒 🚀🚀🚀 </div>
+  <div class="post-list" >
     {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
     {{ range $paginator.Pages }}
       {{ if .Draft }}
@@ -15,10 +16,10 @@
         <span class="item__title--big">
           <a href="{{ .RelPermalink }}" {{if .Scratch.Get "draftPage" }}class="draft"{{end}}>{{ .Title }}</a>
         </span>
-        <span class="item__date">
+        <span class="post-item__date">
           {{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") }}
         </span>
-        <span {{if .Scratch.Get "draftPage" }}class="draft"{{end}}>
+        <span class="post-item__description" {{if .Scratch.Get "draftPage" }}class="draft"{{end}}>
         {{ if .Description }}
         	{{ .Description }}
         {{ else }}

@@ -19,10 +19,15 @@
       padding-left: 0;
       padding-right: 0;
     }
+
+    // 隐藏
+    .site_title, .site_description, .copyright {
+      display: none;
+    }
   }
 
   .sidebar-nav {
-    text-align: left;
+    //text-align: left;
     list-style: none;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -34,7 +39,7 @@
   .hidden-tablet {
     display: none;
   }
-  .sidebar-about,
+  .sidebar_about,
   .sidebar-copyright {
     display: none;
   }
@@ -48,21 +53,21 @@
     overflow: hidden;
     margin-top: 0;
   }
-  .collapsible-menu {
+  .collapsible_menu {
     padding: 0 0;
   }
-  .collapsible-menu ul {
+  .collapsible_menu ul {
     list-style-type: none;
     padding: 0;
   }
-  .collapsible-menu li {
+  .collapsible_menu li {
     display: block;
   }
-  .collapsible-menu a {
+  .collapsible_menu a {
     text-decoration: none;
     cursor: pointer;
   }
-  .collapsible-menu label {
+  .collapsible_menu label {
     background: url(/img/menu-open.svg) no-repeat 1.5rem;
     display: block;
     cursor: pointer;
@@ -112,7 +117,6 @@
     bottom: 0;
     left: 0;
     position: fixed;
-    text-align: left;
     top: 0;
     width: $sidebar-width;
   }

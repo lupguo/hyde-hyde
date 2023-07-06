@@ -3,6 +3,7 @@
 
 $sidebar-data-margin-left: 1.5rem;
 
+// 侧边栏
 .sidebar {
   background-color: $sidebar-color;
   color: rgb(255, 255, 255);
@@ -22,37 +23,9 @@ $sidebar-data-margin-left: 1.5rem;
       color: $link-color;
     }
   }
-
-  .sidebar-about {
-    text-align: center;
-  }
-
-  .author_image {
-    display: block;
-    margin-top: 4px;
-  }
 }
 
-.menu-content {
-  //padding: 2rem 0;
-}
-
-.sidebar-nav {
-  text-align: left;
-  list-style: none;
-  font-size: 16px;
-  line-height: 1.8rem;
-}
-
-.sidebar-nav-item {
-  display: block;
-  line-height: 1.75;
-
-  .active {
-    font-weight: bold;
-  }
-}
-
+// 标题
 .site_title {
   font-size: $site_title_font_size;
   margin-bottom: 0.5rem;
@@ -62,33 +35,73 @@ $sidebar-data-margin-left: 1.5rem;
   }
 }
 
-.site__description {
-  font-size: 1.285rem;
-  font-weight: 300;
+// 头像
+.sidebar_about {
+  margin-top: 4px;
+  margin-bottom: 0.5rem;
+
+  .author_image {
+    display: block;
+  }
+
+  .img--circle {
+    border-radius: 50%;
+  }
+
+  .img--headshot {
+    height: 115px;
+    width: 115px;
+  }
+
+  .img--caption {
+    font-style: italic;
+  }
 }
 
-.sitebar-social {
-  text-align: left;
-  margin-left: 2rem;
+// 描述
+.site_description {
+  font-size: 1.285rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
 
+// 菜单栏
+.collapsible_menu {
+  //padding: 2rem 0;
+}
+
+// 社交账号icon
+.sitebar-social {
   a {
     padding: 0 4px;
     @include link-no-decoration();
   }
+
+  a:first-child {
+    padding-left: 0;
+  }
 }
 
-.img--circle {
-  border-radius: 50%;
+// 导航
+.sidebar-nav {
+  padding: 0;
+  margin-left: 4rem;
+  text-align: left;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.8rem;
 }
 
-.img--headshot {
-  height: 115px;
-  width: 115px;
+// 导航明细
+.sidebar-nav-item {
+  display: block;
+  line-height: 1.75;
+
+  .active {
+    font-weight: bold;
+  }
 }
 
-.img--caption {
-  font-style: italic;
-}
 
 %small-center-text {
   font-size: $font-scale-dot7;

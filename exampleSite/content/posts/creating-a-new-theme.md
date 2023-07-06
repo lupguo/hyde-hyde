@@ -5,7 +5,7 @@ linktitle: Creating a New Theme
 title: Creating a New Theme
 categories: [ "Development", "hugo" ]
 tags: ["hugo", "theme", "html", "css"]
-weight: 10
+weight: 100
 ---
 
 

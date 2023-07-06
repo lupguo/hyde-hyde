@@ -1,13 +1,11 @@
+<!-- Copyright -->
 {{ with .Site.Params.copyright }}
 <div class="copyright">
-  &copy; {{ with $.Site.Params.since }}{{ if lt . now.Year }}{{ . | safeHTML }} - {{ end }}{{ end }}{{ now.Format "2006"}} {{ . | safeHTML }}
-  {{ with $.Site.Params.license }}
-    <a href="{{$.Site.Params.licenseURL | safeHTML}}">{{ . | safeHTML }}</a>
-  {{end}}
-</div>
-{{ end }}
-{{ with .Site.Params.showBuiltWith }}
-<div class="builtwith">
-Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+  <!-- 版本信息  -->
+  <p class="copyright">&copy; {{ now.Format "2006"}} {{ . | safeHTML }} </p>
+  <!-- 备案审核 -->
+  <p class="license">
+	<a href="{{$.Site.Params.licenseURL | safeHTML}}" target="_blank">{{$.Site.Params.license}}</a>
+  </p>
 </div>
 {{ end }}

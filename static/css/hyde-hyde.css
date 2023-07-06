@@ -322,7 +322,7 @@ a.read-more-symbol {
     color: #268bd2;
 }
 
-.sidebar .sidebar-about {
+.sidebar .sidebar_about {
     text-align: center;
 }
 
@@ -766,7 +766,7 @@ a.badge-tag:focus {
         display: none;
     }
 
-    .sidebar-about,
+    .sidebar_about,
     .copyright {
         display: none;
     }
@@ -783,25 +783,25 @@ a.badge-tag:focus {
         margin-top: 0;
     }
 
-    .collapsible-menu {
+    .collapsible_menu {
         padding: 0px 0px;
     }
 
-    .collapsible-menu ul {
+    .collapsible_menu ul {
         list-style-type: none;
         padding: 0;
     }
 
-    .collapsible-menu li {
+    .collapsible_menu li {
         display: block;
     }
 
-    .collapsible-menu a {
+    .collapsible_menu a {
         text-decoration: none;
         cursor: pointer;
     }
 
-    .collapsible-menu label {
+    .collapsible_menu label {
         background: url(/img/menu-open.svg) no-repeat left center;
         background-position: 1.5rem;
         display: block;
