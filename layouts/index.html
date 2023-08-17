@@ -5,7 +5,7 @@
 {{ define "content" }}
   <div class="post-wisdom"> 拥抱变化/吾日三省吾身/日拱一卒 🚀🚀🚀 </div>
   <div class="post-list" >
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections)  25}}
     {{ range $paginator.Pages }}
       {{ if .Draft }}
         {{ .Scratch.Set "draftPage" true }}
@@ -20,6 +20,7 @@
           {{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") }}
         </span>
         <span class="post-item__description" {{if .Scratch.Get "draftPage" }}class="draft"{{end}}>
+		<strong>AI Summary 🤖：</strong>
         {{ if .Description }}
         	{{ .Description }}
         {{ else }}
