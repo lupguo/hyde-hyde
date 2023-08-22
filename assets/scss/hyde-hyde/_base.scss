@@ -63,10 +63,11 @@ h3 {
 }
 
 h4 {
-  padding-left: 0.5rem;
+  //padding-left: 0.5rem;
   color: #1882ce;
   margin: 5px auto;
   font-size: $h4-font-size;
+  border-bottom: 1px solid currentColor;
 }
 
 h5 {
