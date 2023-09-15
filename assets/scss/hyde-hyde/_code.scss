@@ -1,22 +1,8 @@
 pre {
-  border: 1px solid #F9F9F9E7;
-  border-radius: 10px;
-
   code {
     white-space: pre-wrap;
   }
 }
-
-code {
-  background: #f0f0f0;
-  text-shadow: 0 1px #fff;
-  font-size: 0.85em;
-  padding: 0.1em 0.3em;
-  border-radius: 3px;
-  @extend %code-font;
-  @extend %code-style-npf;
-}
-
 %code-font {
   font-family: $code-font-family;
   font-size: $code-font-size;
@@ -40,10 +26,3 @@ code {
   color: #ab5979;
   border-radius: 3px;
 }
-
-//a {
-//  code {
-//    color: $link-color;
-//  }
-//}
-
